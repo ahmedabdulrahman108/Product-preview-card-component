@@ -1,0 +1,126 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2ebe3;
+    height: 100vh;
+}
+
+.container {
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 300px auto;
+    width: 600px;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+img {
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.card .content .header h3 {
+    color: #6c7289;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.card .content .header h1 {
+    font-family: "Fraunces", serif;
+    color: #1c232b;
+    margin-top: 16px;
+    line-height: 1;
+}
+
+.card .content .desc p {
+    color: #6c7289;
+    line-height: 1.6;
+    margin-bottom: 26px;
+    font-size: 14px;
+}
+
+.card .prices {
+    display: flex;
+    align-items: center;
+}
+
+.card .prices .new-price {
+    font-family: "Fraunces", serif;
+    color: #3c8067;
+    font-size: 32px;
+    margin-right: 16px;
+}
+
+.card .prices .old-price {
+    color: #6c7289;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+.card .content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3c8067;
+    padding: 16px 32px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.card .content a i {
+    margin-right: 8px;
+}
+
+.card .content a:hover {
+    background: #1b4132;
+}
+
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.attribution a {
+    color: #3e52a3;
+    text-decoration: none;
+}
+
+@media (max-width : 676px) {
+    .container .card {
+        display: flex;
+        flex-direction: column;
+    }
+}
